@@ -5,10 +5,7 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         ProductRepo productRepo = new ProductRepo();
-
         OrderRepository orderRepo = new OrderListRepository();
-
-        // Option 2: OrderMapRepo (Map-based) - einfach die Zeile oben auskommentieren und diese verwenden
         // OrderRepository orderRepo = new OrderMapRepo();
 
         ShopService shopService = new ShopService(productRepo, orderRepo);
