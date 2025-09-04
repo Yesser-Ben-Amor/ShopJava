@@ -6,9 +6,6 @@ public class Main {
     public static void main(String[] args) {
         ProductRepo productRepo = new ProductRepo();
 
-        // Hier kannst du wählen welche Implementation verwendet wird:
-
-        // Option 1: OrderListRepo (List-based)
         OrderRepository orderRepo = new OrderListRepository();
 
         // Option 2: OrderMapRepo (Map-based) - einfach die Zeile oben auskommentieren und diese verwenden
